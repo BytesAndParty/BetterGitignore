@@ -1,0 +1,217 @@
+/* Better Gitignore - Settings Styles */
+
+.better-gitignore-settings {
+  max-width: 800px;
+}
+
+.better-gitignore-settings h1 {
+  margin-bottom: 0.5em;
+}
+
+/* Templates Grid */
+.templates-section {
+  margin-bottom: 2em;
+}
+
+.templates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--size-4-3);
+  margin-top: var(--size-4-3);
+}
+
+.template-item {
+  background: var(--background-secondary);
+  border-radius: var(--radius-m);
+  padding: var(--size-4-3);
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.template-item:hover {
+  background: var(--background-secondary-alt);
+  border-color: var(--background-modifier-border);
+}
+
+.template-toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--size-4-3);
+  cursor: pointer;
+}
+
+.template-toggle input[type="checkbox"] {
+  margin-top: 4px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--interactive-accent);
+}
+
+.template-content {
+  flex: 1;
+}
+
+.template-name {
+  font-weight: var(--font-semibold);
+  color: var(--text-normal);
+  margin-bottom: 2px;
+}
+
+.template-pattern {
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+  color: var(--text-accent);
+  background: var(--background-primary);
+  padding: 2px 6px;
+  border-radius: var(--radius-s);
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.template-description {
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+}
+
+/* Gitignore Preview */
+.gitignore-preview-section {
+  margin-bottom: 2em;
+}
+
+.gitignore-preview {
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: var(--size-4-3);
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-small);
+  white-space: pre-wrap;
+  max-height: 200px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+.gitignore-comment {
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+.gitignore-negation {
+  color: var(--text-error);
+}
+
+.gitignore-pattern {
+  color: var(--text-normal);
+}
+
+/* Ignored Files Preview */
+.ignored-files-section {
+  margin-bottom: 2em;
+}
+
+.ignored-files-list {
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: var(--size-4-3);
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.files-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.files-list li {
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+  padding: 4px 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.files-list li:last-child {
+  border-bottom: none;
+}
+
+.files-list li::before {
+  content: "📄 ";
+  margin-right: 4px;
+}
+
+.more-files {
+  margin-top: var(--size-4-2);
+  font-size: var(--font-ui-smaller);
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+/* Empty & Loading States */
+.empty-state {
+  color: var(--text-faint);
+  font-style: italic;
+  text-align: center;
+  padding: var(--size-4-4);
+}
+
+.loading {
+  color: var(--text-muted);
+  text-align: center;
+  padding: var(--size-4-4);
+}
+
+.error {
+  color: var(--text-error);
+  text-align: center;
+  padding: var(--size-4-4);
+}
+
+/* Advanced Options */
+.advanced-section {
+  margin-top: 2em;
+  border-top: 1px solid var(--background-modifier-border);
+  padding-top: 1em;
+}
+
+.advanced-summary {
+  cursor: pointer;
+  font-weight: var(--font-semibold);
+  color: var(--text-normal);
+  padding: var(--size-4-2) 0;
+  user-select: none;
+}
+
+.advanced-summary:hover {
+  color: var(--text-accent);
+}
+
+.advanced-content {
+  padding: var(--size-4-3) 0;
+}
+
+.custom-patterns-container {
+  margin: var(--size-4-3) 0;
+}
+
+.custom-patterns-textarea {
+  width: 100%;
+  min-height: 150px;
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-small);
+  resize: vertical;
+}
+
+/* Button Styling */
+.advanced-content button.mod-cta {
+  margin-top: var(--size-4-2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .templates-grid {
+    grid-template-columns: 1fr;
+  }
+}

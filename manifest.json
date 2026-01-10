@@ -1,0 +1,10 @@
+{
+  "id": "better-gitignore",
+  "name": "Better Gitignore",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "A beautiful .gitignore editor with quick templates for Obsidian-specific files and live preview of ignored files.",
+  "author": "Robert Stickler",
+  "authorUrl": "https://github.com/robertstickler",
+  "isDesktopOnly": false
+}
